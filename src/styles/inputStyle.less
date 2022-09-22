@@ -1,0 +1,107 @@
+@import "./color.less";
+@import "./font.less";
+
+.input-part {
+  padding: 2rem;
+  p {
+    color: @very-dark-cyan;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.bill-input,
+.people-num {
+  display: flex;
+  background-color: @very-light-grayish-cyan;
+  height: 3rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  &:hover,
+  &:focus {
+    border-style: solid;
+    border-width: 1px;
+    border-color: @strong-cyan;
+  }
+}
+
+.bill,
+.num {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 95%;
+  text-align: right;
+  font-size: 24px;
+  color: @light-grayish-cyan;
+  float: right;
+}
+
+svg {
+  padding-left: 1rem;
+  vertical-align: middle;
+}
+
+.tip {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+.tips {
+  background-color: @very-dark-cyan;
+  color: @white;
+  font-size: 24px;
+  height: 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: @strong-cyan;
+    color: @very-dark-cyan;
+  }
+}
+.tip-custom {
+  background-color: @very-light-grayish-cyan;
+  font-family: @font-family-bold;
+
+  input {
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 24px;
+    width: 200px;
+    font-size: 24px;
+  }
+}
+
+.tip-amount,
+.total {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+}
+
+.people-text {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#error {
+  color: red;
+  text-align: right;
+}
+label {
+  margin-bottom: 2rem;
+}

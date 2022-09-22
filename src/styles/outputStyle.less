@@ -1,0 +1,46 @@
+@import "./color.less";
+@import "./font.less";
+
+.output-part {
+  background-color: @very-dark-cyan;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: repeat(4, 7rem);
+}
+
+.text {
+  margin-left: 5rem;
+  color: @white;
+}
+.person {
+  color: @dark-grayish-cyan;
+}
+
+.total-amount,
+.amount {
+  grid-column-start: 3;
+  font-size: 30px;
+  font-weight: bold;
+  color: @strong-cyan;
+}
+
+.reset {
+  font-family: @font-family-sans-book;
+  width: 80%;
+  height: 3rem;
+  grid-row-start: 4;
+  justify-self: center;
+  align-self: center;
+  font-size: 24px;
+  background-color: @grayish-cyan;
+  color: @dark-grayish-cyan;
+  border: none;
+  border-radius: 0.5rem;
+  &:hover,
+  &:focus {
+    background-color: @strong-cyan;
+    color: @very-dark-cyan;
+  }
+}
